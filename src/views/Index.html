@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+  <style>{{STYLE:src/styles/global-1.css}}</style>
+</head>
+<body class="bg-slate-50 font-inter text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-700">
+  <div id="pullToRefreshIndicator"
+    class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-5 py-3 rounded-b-2xl shadow-lg">
+    <div class="flex items-center gap-3">
+      <div id="ptrSpinner" class="w-5 h-5 border-2 border-white border-t-transparent rounded-full ptr-spin hidden">
+      </div>
+      <svg id="ptrArrow" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+      <span id="ptrText" class="text-sm font-semibold">Tarik untuk refresh</span>
+    </div>
+  </div>
+  <div id="app-container" class="opacity-0 transition-opacity duration-300 ease-in-out">
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="animate-pulse flex flex-col items-center">
+        <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4"></div>
+        <h2 class="text-xl font-bold text-slate-700">Memuat Aplikasi...</h2>
+      </div>
+    </div>
+  </div>
+  <div id="examLoadingOverlay" class="hidden fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl">
+      <div class="flex flex-col items-center">
+        <div class="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4"></div>
+        <h3 class="text-lg font-bold text-slate-800 mb-1">Memproses...</h3>
+        <p id="examLoadingMsg" class="text-slate-500 text-sm text-center">Mohon tunggu sebentar</p>
+      </div>
+    </div>
+  </div>
+  <!-- ═══════════════════════════════════════════════════
+       MAINTENANCE MODE MODAL
+       ═══════════════════════════════════════════════════ -->
+  <div id="maintenanceModal"
+    role="dialog" aria-modal="true" aria-labelledby="mtnTitle"
+    style="position:fixed;inset:0;z-index:99999;align-items:center;justify-content:center;padding:16px;font-family:'DM Sans','Inter',system-ui,sans-serif;">
+    <!-- Overlay -->
+    <div class="mtn-overlay" onclick="closeMaintenanceModal()"
+      style="position:absolute;inset:0;background:rgba(15,23,42,0.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);"></div>
+    <!-- Panel -->
+    <div class="mtn-panel" style="position:relative;width:100%;max-width:460px;background:#fff;border-radius:24px;box-shadow:0 32px 80px -8px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.12);overflow:hidden;">
+      <!-- Top accent bar (animated gradient shimmer) -->
+      <div class="mtn-accent-bar" style="height:5px;"></div>
+      <!-- Body -->
+      <div style="padding:32px 32px 0;">
+        <!-- Status badge -->
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+          <span style="display:inline-flex;align-items:center;gap:6px;background:#FEF2F2;color:#DC2626;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:999px;border:1.5px solid #FECACA;">
+            <span style="width:7px;height:7px;background:#EF4444;border-radius:50%;display:inline-block;animation:mtn-pulse-ring 1.4s ease-in-out infinite;"></span>
+            MAINTENANCE
+          </span>
+          <span id="mtnTimestamp" style="font-size:11px;color:#94A3B8;font-weight:500;"></span>
+        </div>
+        <!-- Icon area -->
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:24px;">
+          <div class="mtn-ring" style="width:88px;height:88px;background:linear-gradient(135deg,#FEF2F2 0%,#FFF7ED 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid #FECACA;margin-bottom:20px;position:relative;">
+            <!-- Outer pulse ring -->
+            <div style="position:absolute;inset:-8px;border-radius:50%;border:2px solid #FCA5A5;opacity:.4;animation:mtn-pulse-ring 2s ease-in-out infinite .3s;"></div>
+            <svg class="mtn-gear" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <h2 id="mtnTitle" style="font-size:20px;font-weight:800;color:#0F172A;margin:0 0 8px;letter-spacing:-.02em;">Sistem Sedang Pemeliharaan</h2>
+          <p style="font-size:13px;color:#64748B;line-height:1.6;margin:0;">Mohon maaf atas ketidaknyamanan ini.<br>Sistem sedang dalam proses pemeliharaan.</p>
+        </div>
+        <!-- Custom message box -->
+        <div id="mtnMessageBox" style="background:linear-gradient(135deg,#F8FAFC,#F1F5F9);border:1.5px solid #E2E8F0;border-radius:14px;padding:16px 18px;margin-bottom:16px;display:none;">
+          <div style="display:flex;gap:10px;align-items:flex-start;">
+            <div style="flex-shrink:0;width:32px;height:32px;background:#EEF2FF;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-top:1px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div style="flex:1;min-width:0;">
+              <p style="font-size:11px;font-weight:700;color:#6366F1;text-transform:uppercase;letter-spacing:.05em;margin:0 0 5px;">Pesan dari Administrator</p>
+              <p id="mtnCustomMsg" style="font-size:13px;color:#334155;line-height:1.65;margin:0;white-space:pre-wrap;word-break:break-word;"></p>
+            </div>
+          </div>
+        </div>
+        <!-- Default tips (when no custom message) -->
+        <div id="mtnDefaultTips" style="display:none;background:#F0FDF4;border:1.5px solid #BBF7D0;border-radius:14px;padding:14px 16px;margin-bottom:16px;">
+          <p style="font-size:11px;font-weight:700;color:#16A34A;text-transform:uppercase;letter-spacing:.05em;margin:0 0 8px;">Yang dapat Anda lakukan:</p>
+          <ul style="margin:0;padding:0 0 0 14px;font-size:12.5px;color:#166534;line-height:1.9;">
+            <li>Tunggu beberapa saat dan coba login kembali</li>
+            <li>Hubungi administrator sekolah jika mendesak</li>
+            <li>Simpan pekerjaan Anda di tempat lain sementara ini</li>
+          </ul>
+        </div>
+        <!-- Progress bar -->
+        <div style="margin-bottom:28px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <span style="font-size:11px;color:#94A3B8;font-weight:600;">Proses pemeliharaan</span>
+            <span style="font-size:11px;color:#F97316;font-weight:700;">Sedang berjalan...</span>
+          </div>
+          <div style="height:6px;background:#F1F5F9;border-radius:999px;overflow:hidden;">
+            <div class="mtn-progress-bar" style="height:100%;background:linear-gradient(90deg,#EF4444,#F97316);border-radius:999px;width:5%;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div style="padding:20px 32px 28px;background:#FAFAFA;border-top:1.5px solid #F1F5F9;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+        <button onclick="closeMaintenanceModal()" id="mtnCloseBtn"
+          style="flex:1;min-width:140px;padding:13px 20px;background:linear-gradient(135deg,#EF4444,#DC2626);color:#fff;font-size:14px;font-weight:700;border:none;border-radius:13px;cursor:pointer;transition:opacity .15s,transform .1s;box-shadow:0 4px 14px rgba(239,68,68,.35);display:flex;align-items:center;justify-content:center;gap:8px;"
+          onmouseover="this.style.opacity='.9';this.style.transform='translateY(-1px)'"
+          onmouseout="this.style.opacity='1';this.style.transform='translateY(0)'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Saya Mengerti
+        </button>
+      </div>
+    </div>
+  </div>
+  <style>{{STYLE:src/styles/global-2.css}}</style>
+  <script id="server-config" type="application/json">
+    <?!= typeof serverConfig !== 'undefined' ? serverConfig : '{}' ?>
+  </script>
+  <script>{{CLIENT_BUNDLE}}  </script>
+  <!-- === MODAL BLOKIR JURNAL === -->
+  <div id="blokirJurnalModal" class="hidden fixed inset-0 z-[70] overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen p-4">
+      <div class="fixed inset-0 bg-gray-900/70 backdrop-blur-sm" onclick="closeBlokirJurnalModal()"></div>
+      <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-md mx-auto overflow-hidden z-10">
+      <div class="bg-gradient-to-br from-rose-600 to-rose-700 px-6 py-5 text-white">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base font-bold leading-tight">Input Jurnal Tidak Tersedia</h3>
+            <p class="text-rose-200 text-xs mt-0.5">Jurnal tidak dapat diinput pada tanggal ini</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-6">
+        <p id="blokirJurnalPesanModal" class="text-sm text-slate-700 leading-relaxed mb-6">Input jurnal tidak tersedia untuk mata pelajaran dan tanggal yang dipilih.</p>
+        <div class="flex justify-end">
+          <button onclick="closeBlokirJurnalModal()" type="button"
+            class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white text-sm font-semibold px-6 py-2.5 rounded-xl transition active:scale-95">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+            Tutup
+          </button>
+        </div>
+        <p class="mt-4 text-center text-xs text-slate-400">Silakan hubungi admin jika ada pertanyaan.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- === MODAL BLOKIR ACARA === -->
+  <div id="blokirAcaraModal" class="hidden fixed inset-0 z-[70] overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen p-4">
+      <div class="fixed inset-0 bg-gray-900/70 backdrop-blur-sm" onclick="closeBlokirAcaraModal()"></div>
+      <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-md mx-auto overflow-hidden z-10">
+      <div class="bg-gradient-to-br from-rose-600 to-rose-700 px-6 py-5 text-white">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base font-bold leading-tight">Input Jurnal Acara Tidak Tersedia</h3>
+            <p class="text-rose-200 text-xs mt-0.5">Jurnal acara tidak dapat diinput pada tanggal ini</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-6">
+        <p id="blokirAcaraPesanModal" class="text-sm text-slate-700 leading-relaxed mb-6">Input jurnal acara tidak tersedia untuk tipe acara dan tanggal yang dipilih.</p>
+        <div class="flex justify-end">
+          <button onclick="closeBlokirAcaraModal()" type="button"
+            class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white text-sm font-semibold px-6 py-2.5 rounded-xl transition active:scale-95">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+            Tutup
+          </button>
+        </div>
+        <p class="mt-4 text-center text-xs text-slate-400">Silakan hubungi admin jika ada pertanyaan.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</html>
