@@ -1,0 +1,463 @@
+{
+  "target": "Google Apps Script V8",
+  "backend": [
+    "src/server/core/config.js",
+    "src/server/events/rules.js",
+    "src/server/attendance/authorization.js",
+    "src/server/jtm/rules.js",
+    "src/server/core/setup.js",
+    "src/server/student-attendance/service.js",
+    "src/server/core/database.js",
+    "src/server/core/format.js",
+    "src/server/auth/session.js",
+    "src/server/users/profile.js",
+    "src/server/auth/email-verification.js",
+    "src/server/notifications/service.js",
+    "src/server/auth/password-policy.js",
+    "src/server/auth/external-users.js",
+    "src/server/schedules/service.js",
+    "src/server/journals/service.js",
+    "src/server/settings/service.js",
+    "src/server/announcements/service.js",
+    "src/server/settings/blocks.js",
+    "src/server/announcements/scheduler.js",
+    "src/server/web/entry.js",
+    "src/server/web/sidebar.js",
+    "src/server/web/navbar.js",
+    "src/server/web/footer.js",
+    "src/server/web/modals.js",
+    "src/server/web/router.js",
+    "src/server/dashboard/teacher.js",
+    "src/server/journals/delete.js",
+    "src/server/dashboard/admin.js",
+    "src/server/attendance/teacher-confirmation.js",
+    "src/server/picket/service.js",
+    "src/server/honorarium/service.js",
+    "src/server/users/admin.js",
+    "src/server/settings/lookup.js",
+    "src/server/exports/pdf.js",
+    "src/server/journals/admin-history.js",
+    "src/server/ceremony/service.js",
+    "src/server/substitutes/service.js",
+    "src/server/core/date.js",
+    "src/server/auth/recovery.js",
+    "src/server/exports/verification.js",
+    "src/server/journals/teacher-history.js",
+    "src/server/journals/holiday-automation.js",
+    "src/server/notifications/reminders.js",
+    "src/server/core/period.js",
+    "src/server/core/snapshot.js",
+    "src/server/honorarium/history-slip.js",
+    "src/server/settings/holiday-range.js",
+    "src/server/dashboard/extended.js",
+    "src/server/picket/admin.js",
+    "src/server/dashboard/progress.js",
+    "src/server/exams/catalog.js",
+    "src/server/exams/attendance.js",
+    "src/server/exams/queries.js",
+    "src/server/exams/cleanup.js",
+    "src/server/jtm/repository.js",
+    "src/server/jtm/service.js",
+    "src/server/transport/config.js",
+    "src/server/transport/rules.js",
+    "src/server/transport/calculation.js",
+    "src/server/attendance/queries.js",
+    "src/server/attendance/time.js",
+    "src/server/attendance/history.js",
+    "src/server/attendance/manual.js",
+    "src/server/attendance/schedule-templates.js",
+    "src/server/attendance/schedule-and-leave.js",
+    "src/server/events/definitions.js",
+    "src/server/events/attendance.js",
+    "src/server/events/journals.js"
+  ],
+  "frontend": [
+    "src/client/navigation/registry.js",
+    "src/client/core/state-and-ui.js",
+    "src/client/core/modal-ux.js",
+    "src/client/core/pull-to-refresh.js",
+    "src/client/core/bootstrap.js",
+    "src/client/auth/session-monitor.js",
+    "src/client/navigation/router.js",
+    "src/client/auth/login.js",
+    "src/client/settings/maintenance.js",
+    "src/client/auth/login-dialog.js",
+    "src/client/auth/logout.js",
+    "src/client/settings/general.js",
+    "src/client/navigation/sidebar.js",
+    "src/client/student-attendance/service.js",
+    "src/client/picket/service.js",
+    "src/client/jtm/teaching.js",
+    "src/client/picket/schedules.js",
+    "src/client/ceremony/render.js",
+    "src/client/core/loading.js",
+    "src/client/announcements/service.js",
+    "src/client/ceremony/actions.js",
+    "src/client/substitutes/active.js",
+    "src/client/users/profile.js",
+    "src/client/exports/pdf.js",
+    "src/client/settings/delete.js",
+    "src/client/dashboard/service.js",
+    "src/client/journals/service.js",
+    "src/client/users/admin.js",
+    "src/client/settings/editors.js",
+    "src/client/honorarium/current.js",
+    "src/client/honorarium/admin-history.js",
+    "src/client/honorarium/slip.js",
+    "src/client/core/escaping.js",
+    "src/client/honorarium/history.js",
+    "src/client/schedules/admin.js",
+    "src/client/settings/subjects.js",
+    "src/client/auth/forgot.js",
+    "src/client/schedules/teacher.js",
+    "src/client/navigation/badges.js",
+    "src/client/substitutes/actions.js",
+    "src/client/ceremony/confirmation.js",
+    "src/client/exports/journal.js",
+    "src/client/core/animations.js",
+    "src/client/core/mobile.js",
+    "src/client/core/rendering.js",
+    "src/client/navigation/collapse.js",
+    "src/client/journals/teacher-history.js",
+    "src/client/journals/admin-history.js",
+    "src/client/exports/csv.js",
+    "src/client/settings/visibility.js",
+    "src/client/settings/calendar.js",
+    "src/client/dashboard/extended.js",
+    "src/client/picket/admin-modal.js",
+    "src/client/dashboard/progress.js",
+    "src/client/schedules/recap.js",
+    "src/client/picket/substitutes.js",
+    "src/client/exams/admin.js",
+    "src/client/exams/teacher.js",
+    "src/client/jtm/exams.js",
+    "src/client/attendance/service.js",
+    "src/client/attendance/templates.js",
+    "src/client/events/service.js",
+    "src/client/navigation/tooltips.js",
+    "src/client/navigation/accordion.js",
+    "src/client/attendance/pages.js",
+    "src/client/attendance/admin-daily.js",
+    "src/client/settings/journal-blocks.js",
+    "src/client/settings/event-blocks.js",
+    "src/client/settings/transport-blocks.js"
+  ],
+  "styles": [
+    "src/styles/global-1.css",
+    "src/styles/global-2.css"
+  ],
+  "views": [
+    {
+      "id": "Page_Login",
+      "file": "src/views/pages/Page_Login.js",
+      "render": "_renderPage_Login_",
+      "state": "login",
+      "initialize": [
+        "initLoginPage"
+      ]
+    },
+    {
+      "id": "Page_Dashboard",
+      "file": "src/views/pages/Page_Dashboard.js",
+      "render": "_renderPage_Dashboard_",
+      "state": "dashboard",
+      "initialize": [
+        "initDashboard"
+      ]
+    },
+    {
+      "id": "Page_Journal",
+      "file": "src/views/pages/Page_Journal.js",
+      "render": "_renderPage_Journal_",
+      "state": "journal",
+      "initialize": [
+        "initJournal"
+      ]
+    },
+    {
+      "id": "Page_Honorarium",
+      "file": "src/views/pages/Page_Honorarium.js",
+      "render": "_renderPage_Honorarium_",
+      "state": "recap",
+      "initialize": [
+        "initHonorarium"
+      ]
+    },
+    {
+      "id": "Page_HonorariumHistory",
+      "file": "src/views/pages/Page_HonorariumHistory.js",
+      "render": "_renderPage_HonorariumHistory_",
+      "state": "honorarium-history",
+      "initialize": [
+        "initHonorariumHistory"
+      ]
+    },
+    {
+      "id": "Page_ManageSchedule",
+      "file": "src/views/pages/Page_ManageSchedule.js",
+      "render": "_renderPage_ManageSchedule_",
+      "state": "manage-schedule",
+      "initialize": [
+        "initManageSchedule"
+      ]
+    },
+    {
+      "id": "Page_MySchedule",
+      "file": "src/views/pages/Page_MySchedule.js",
+      "render": "_renderPage_MySchedule_",
+      "state": "schedule",
+      "initialize": [
+        "initMySchedule"
+      ]
+    },
+    {
+      "id": "Page_Picket",
+      "file": "src/views/pages/Page_Picket.js",
+      "render": "_renderPage_Picket_",
+      "state": "picket",
+      "initialize": [
+        "initPicket"
+      ]
+    },
+    {
+      "id": "Page_ExamPanitia",
+      "file": "src/views/pages/Page_ExamPanitia.js",
+      "render": "_renderPage_ExamPanitia_",
+      "state": "exam-panitia",
+      "initialize": [
+        "initExamPanitiaPage"
+      ]
+    },
+    {
+      "id": "Page_Profile",
+      "file": "src/views/pages/Page_Profile.js",
+      "render": "_renderPage_Profile_",
+      "state": "profile",
+      "initialize": [
+        "initProfile"
+      ]
+    },
+    {
+      "id": "Page_AdminDailyAttendance",
+      "file": "src/views/pages/Page_AdminDailyAttendance.js",
+      "render": "_renderPage_AdminDailyAttendance_",
+      "state": "admin-daily-attendance",
+      "initialize": [
+        "initAdminDailyAttendance"
+      ]
+    },
+    {
+      "id": "Page_Attendance",
+      "file": "src/views/pages/Page_Attendance.js",
+      "render": "_renderPage_Attendance_",
+      "state": "attendance",
+      "initialize": [
+        "initAttendance"
+      ]
+    },
+    {
+      "id": "Page_AttendanceList",
+      "file": "src/views/pages/Page_AttendanceList.js",
+      "render": "_renderPage_AttendanceList_",
+      "state": "attendance-list",
+      "initialize": [
+        "initAttendanceList"
+      ]
+    },
+    {
+      "id": "Page_AttendanceSchedule",
+      "file": "src/views/pages/Page_AttendanceSchedule.js",
+      "render": "_renderPage_AttendanceSchedule_",
+      "state": "attendance-schedule",
+      "initialize": [
+        "initAttendanceSchedule"
+      ]
+    },
+    {
+      "id": "Page_Settings_Config",
+      "file": "src/views/pages/Page_Settings_Config.js",
+      "render": "_renderPage_Settings_Config_",
+      "state": "settings-config",
+      "initialize": [
+        "initSettings"
+      ]
+    },
+    {
+      "id": "Page_Settings_Transportasi",
+      "file": "src/views/pages/Page_Settings_Transportasi.js",
+      "render": "_renderPage_Settings_Transportasi_",
+      "state": "settings-transportasi",
+      "initialize": [
+        "initSettings"
+      ]
+    },
+    {
+      "id": "Page_Settings_Maintenance",
+      "file": "src/views/pages/Page_Settings_Maintenance.js",
+      "render": "_renderPage_Settings_Maintenance_",
+      "state": "settings-maintenance",
+      "initialize": [
+        "initSettings"
+      ]
+    },
+    {
+      "id": "Page_Settings_Kalender",
+      "file": "src/views/pages/Page_Settings_Kalender.js",
+      "render": "_renderPage_Settings_Kalender_",
+      "state": "settings-kalender",
+      "initialize": [
+        "initSettings"
+      ]
+    },
+    {
+      "id": "Page_Settings_Mapel",
+      "file": "src/views/pages/Page_Settings_Mapel.js",
+      "render": "_renderPage_Settings_Mapel_",
+      "state": "settings-mapel",
+      "initialize": [
+        "initSettings"
+      ]
+    },
+    {
+      "id": "Page_Settings_Tunjangan",
+      "file": "src/views/pages/Page_Settings_Tunjangan.js",
+      "render": "_renderPage_Settings_Tunjangan_",
+      "state": "settings-tunjangan",
+      "initialize": [
+        "initSettings"
+      ]
+    },
+    {
+      "id": "Page_Settings_Pengumuman",
+      "file": "src/views/pages/Page_Settings_Pengumuman.js",
+      "render": "_renderPage_Settings_Pengumuman_",
+      "state": "settings-pengumuman",
+      "initialize": [
+        "_annAdminLoadList"
+      ],
+      "delay": 30
+    },
+    {
+      "id": "Page_Users",
+      "file": "src/views/pages/Page_Users.js",
+      "render": "_renderPage_Users_",
+      "state": "users",
+      "initialize": [
+        "initUsers"
+      ]
+    },
+    {
+      "id": "Page_ExamSchedule",
+      "file": "src/views/pages/Page_ExamSchedule.js",
+      "render": "_renderPage_ExamSchedule_",
+      "state": "exam",
+      "initialize": [
+        "initExamSchedule"
+      ]
+    },
+    {
+      "id": "Page_MyAttendance",
+      "file": "src/views/pages/Page_MyAttendance.js",
+      "render": "_renderPage_MyAttendance_",
+      "state": "my-attendance",
+      "initialize": [
+        "initMyAttendance"
+      ]
+    },
+    {
+      "id": "Page_EventManagement",
+      "file": "src/views/pages/Page_EventManagement.js",
+      "render": "_renderPage_EventManagement_",
+      "state": "event-management",
+      "initialize": [
+        "_wireEventNavItems",
+        "initEventManagementPage"
+      ]
+    },
+    {
+      "id": "Page_EventAttendance",
+      "file": "src/views/pages/Page_EventAttendance.js",
+      "render": "_renderPage_EventAttendance_",
+      "state": "event-attendance",
+      "initialize": [
+        "_wireEventNavItems",
+        "initEventAttendancePage"
+      ]
+    },
+    {
+      "id": "Page_EventJournal",
+      "file": "src/views/pages/Page_EventJournal.js",
+      "render": "_renderPage_EventJournal_",
+      "state": "event-journal",
+      "initialize": [
+        "_wireEventNavItems",
+        "initEventJournalPage"
+      ]
+    },
+    {
+      "id": "Page_EventJournalHistory",
+      "file": "src/views/pages/Page_EventJournalHistory.js",
+      "render": "_renderPage_EventJournalHistory_",
+      "state": "event-journal-history",
+      "initialize": [
+        "_wireEventNavItems",
+        "initEventJournalHistoryPage"
+      ]
+    },
+    {
+      "id": "Page_StudentAttendanceInput",
+      "file": "src/views/pages/Page_StudentAttendanceInput.js",
+      "render": "_renderPage_StudentAttendanceInput_",
+      "state": "student-attendance-input",
+      "initialize": [
+        "initStudentAttendance"
+      ]
+    },
+    {
+      "id": "Page_StudentAttendance",
+      "file": "src/views/pages/Page_StudentAttendance.js",
+      "render": "_renderPage_StudentAttendance_",
+      "state": "student-attendance",
+      "initialize": [
+        "initStudentAttendance"
+      ]
+    },
+    {
+      "id": "Page_Settings_BlokJurnal",
+      "file": "src/views/pages/Page_Settings_BlokJurnal.js",
+      "render": "_renderPage_Settings_BlokJurnal_",
+      "state": "settings-blokjurnal",
+      "initialize": [
+        "initBlokJurnal"
+      ]
+    },
+    {
+      "id": "Page_Settings_BlokAcara",
+      "file": "src/views/pages/Page_Settings_BlokAcara.js",
+      "render": "_renderPage_Settings_BlokAcara_",
+      "state": "settings-blokacara",
+      "initialize": [
+        "initBlokAcara"
+      ]
+    },
+    {
+      "id": "Page_Settings_BlokTransport",
+      "file": "src/views/pages/Page_Settings_BlokTransport.js",
+      "render": "_renderPage_Settings_BlokTransport_",
+      "state": "settings-bloktransport",
+      "initialize": [
+        "initBlokTransport"
+      ]
+    },
+    {
+      "id": "Page_StudentAttendanceHistory",
+      "file": "src/views/pages/Page_StudentAttendanceHistory.js",
+      "render": "_renderPage_StudentAttendanceHistory_",
+      "state": "student-attendance-history",
+      "initialize": [
+        "initStudentAttendanceHistory"
+      ]
+    }
+  ],
+  "html": "src/views/Index.html"
+}
