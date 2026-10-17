@@ -1,0 +1,3808 @@
+[
+  {
+    "name": "_validateEventDefinition",
+    "source": "src/server/events/rules.js",
+    "legacyLine": 40,
+    "lines": 45,
+    "calls": []
+  },
+  {
+    "name": "_authorizeEventWriter",
+    "source": "src/server/events/rules.js",
+    "legacyLine": 85,
+    "lines": 3,
+    "calls": []
+  },
+  {
+    "name": "_computeEventJtm",
+    "source": "src/server/events/rules.js",
+    "legacyLine": 88,
+    "lines": 11,
+    "calls": []
+  },
+  {
+    "name": "_computeTransportDates",
+    "source": "src/server/events/rules.js",
+    "legacyLine": 99,
+    "lines": 14,
+    "calls": []
+  },
+  {
+    "name": "_authorizeAttendanceWriter",
+    "source": "src/server/attendance/authorization.js",
+    "legacyLine": 114,
+    "lines": 5,
+    "calls": []
+  },
+  {
+    "name": "_jtmValidateAdjusted",
+    "source": "src/server/jtm/rules.js",
+    "legacyLine": 134,
+    "lines": 34,
+    "calls": []
+  },
+  {
+    "name": "_jtmComputeDifference",
+    "source": "src/server/jtm/rules.js",
+    "legacyLine": 168,
+    "lines": 4,
+    "calls": []
+  },
+  {
+    "name": "_jtmValidateReason",
+    "source": "src/server/jtm/rules.js",
+    "legacyLine": 172,
+    "lines": 31,
+    "calls": []
+  },
+  {
+    "name": "_jtmValidateAllocation",
+    "source": "src/server/jtm/rules.js",
+    "legacyLine": 203,
+    "lines": 41,
+    "calls": []
+  },
+  {
+    "name": "_jtmCheckConservation",
+    "source": "src/server/jtm/rules.js",
+    "legacyLine": 244,
+    "lines": 31,
+    "calls": []
+  },
+  {
+    "name": "_jtmAuthorizeKbm",
+    "source": "src/server/jtm/rules.js",
+    "legacyLine": 275,
+    "lines": 23,
+    "calls": []
+  },
+  {
+    "name": "_jtmAuthorizeExam",
+    "source": "src/server/jtm/rules.js",
+    "legacyLine": 298,
+    "lines": 20,
+    "calls": []
+  },
+  {
+    "name": "doSetup",
+    "source": "src/server/core/setup.js",
+    "legacyLine": 318,
+    "lines": 277,
+    "calls": [
+      "createSheetIfNeeded_"
+    ]
+  },
+  {
+    "name": "getStudentAttendancePageData",
+    "source": "src/server/student-attendance/service.js",
+    "legacyLine": 595,
+    "lines": 63,
+    "calls": [
+      "_examIsConfirmedPanitia_",
+      "_getConfigMap",
+      "_hasTimeInToday",
+      "_isPicketOfficer",
+      "getData",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveStudentAttendance",
+    "source": "src/server/student-attendance/service.js",
+    "legacyLine": 658,
+    "lines": 62,
+    "calls": [
+      "_examIsConfirmedPanitia_",
+      "_hasTimeInToday",
+      "_invalidateDataSnapshot",
+      "_isPicketOfficer",
+      "generateId",
+      "getSheet",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "checkStudentAttendanceToday",
+    "source": "src/server/student-attendance/service.js",
+    "legacyLine": 720,
+    "lines": 44,
+    "calls": [
+      "_examIsConfirmedPanitia_",
+      "_getConfigMap",
+      "_getIndoDayIndex",
+      "_hasTimeInToday",
+      "_isPicketOfficer",
+      "getData",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getStudentAttendanceHistory",
+    "source": "src/server/student-attendance/service.js",
+    "legacyLine": 764,
+    "lines": 54,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "createSheetIfNeeded_",
+    "source": "src/server/core/database.js",
+    "legacyLine": 818,
+    "lines": 19,
+    "calls": []
+  },
+  {
+    "name": "getDbId",
+    "source": "src/server/core/database.js",
+    "legacyLine": 837,
+    "lines": 9,
+    "calls": []
+  },
+  {
+    "name": "getSheet",
+    "source": "src/server/core/database.js",
+    "legacyLine": 847,
+    "lines": 11,
+    "calls": [
+      "getDbId"
+    ]
+  },
+  {
+    "name": "getData",
+    "source": "src/server/core/database.js",
+    "legacyLine": 858,
+    "lines": 46,
+    "calls": [
+      "getSheet"
+    ]
+  },
+  {
+    "name": "findData",
+    "source": "src/server/core/database.js",
+    "legacyLine": 904,
+    "lines": 4,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "generateId",
+    "source": "src/server/core/format.js",
+    "legacyLine": 908,
+    "lines": 3,
+    "calls": []
+  },
+  {
+    "name": "formatRupiah",
+    "source": "src/server/core/format.js",
+    "legacyLine": 911,
+    "lines": 9,
+    "calls": []
+  },
+  {
+    "name": "formatDateIndo",
+    "source": "src/server/core/format.js",
+    "legacyLine": 920,
+    "lines": 23,
+    "calls": []
+  },
+  {
+    "name": "loginUser",
+    "source": "src/server/auth/session.js",
+    "legacyLine": 943,
+    "lines": 92,
+    "calls": [
+      "_extGetPassword_",
+      "_isValidEmail_",
+      "getData",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "logoutUser",
+    "source": "src/server/auth/session.js",
+    "legacyLine": 1035,
+    "lines": 11,
+    "calls": [
+      "getSheet"
+    ]
+  },
+  {
+    "name": "verifySession",
+    "source": "src/server/auth/session.js",
+    "legacyLine": 1046,
+    "lines": 11,
+    "calls": [
+      "findData",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "checkSessionStatus",
+    "source": "src/server/auth/session.js",
+    "legacyLine": 1057,
+    "lines": 10,
+    "calls": [
+      "verifySession"
+    ]
+  },
+  {
+    "name": "updateUserProfile",
+    "source": "src/server/users/profile.js",
+    "legacyLine": 1067,
+    "lines": 75,
+    "calls": [
+      "_checkPasswordComplexity",
+      "_ensureUserColumn_",
+      "_extGetPassword_",
+      "_extSetPassword_",
+      "_invalidateDataSnapshot",
+      "_normalizePhoneNumber_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "updateGuruProfileDetails",
+    "source": "src/server/users/profile.js",
+    "legacyLine": 1142,
+    "lines": 22,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getMyProfile",
+    "source": "src/server/users/profile.js",
+    "legacyLine": 1164,
+    "lines": 65,
+    "calls": [
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_ensureUserColumn_",
+    "source": "src/server/users/profile.js",
+    "legacyLine": 1229,
+    "lines": 15,
+    "calls": []
+  },
+  {
+    "name": "_normalizePhoneNumber_",
+    "source": "src/server/users/profile.js",
+    "legacyLine": 1244,
+    "lines": 35,
+    "calls": []
+  },
+  {
+    "name": "requestEmailOTP",
+    "source": "src/server/auth/email-verification.js",
+    "legacyLine": 1279,
+    "lines": 105,
+    "calls": [
+      "_escHtml_",
+      "_isValidEmail_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "verifyEmailOTP",
+    "source": "src/server/auth/email-verification.js",
+    "legacyLine": 1384,
+    "lines": 97,
+    "calls": [
+      "_ensureUserColumn_",
+      "_invalidateDataSnapshot",
+      "_isValidEmail_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_isValidEmail_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1481,
+    "lines": 4,
+    "calls": []
+  },
+  {
+    "name": "_escHtml_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1485,
+    "lines": 7,
+    "calls": []
+  },
+  {
+    "name": "_notifGetEmail_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1492,
+    "lines": 17,
+    "calls": [
+      "_isValidEmail_",
+      "getData"
+    ]
+  },
+  {
+    "name": "_notifGetName_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1509,
+    "lines": 10,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_notifBuildHtml_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1519,
+    "lines": 87,
+    "calls": [
+      "_escHtml_",
+      "_getConfigMap"
+    ]
+  },
+  {
+    "name": "_notifSend_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1606,
+    "lines": 19,
+    "calls": [
+      "_isValidEmail_"
+    ]
+  },
+  {
+    "name": "_notifToUser_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1625,
+    "lines": 5,
+    "calls": [
+      "_notifGetEmail_",
+      "_notifSend_"
+    ]
+  },
+  {
+    "name": "_notifIsHoliday_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1630,
+    "lines": 21,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_notifIsKbmEnabled_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1651,
+    "lines": 10,
+    "calls": [
+      "_notifIsHoliday_"
+    ]
+  },
+  {
+    "name": "_notifIsTeachingDay_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1661,
+    "lines": 11,
+    "calls": [
+      "_notifIsExamEnabled_",
+      "_notifIsHoliday_"
+    ]
+  },
+  {
+    "name": "_notifIsExamEnabled_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1672,
+    "lines": 15,
+    "calls": [
+      "_notifIsHoliday_",
+      "getData"
+    ]
+  },
+  {
+    "name": "_notifPicketConfirmed_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1687,
+    "lines": 28,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifGetName_",
+      "_notifIsKbmEnabled_",
+      "_notifToUser_",
+      "_notifTodayID_"
+    ]
+  },
+  {
+    "name": "_notifPicketRevoked_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1715,
+    "lines": 22,
+    "calls": [
+      "_notifBuildHtml_",
+      "_notifGetName_",
+      "_notifIsKbmEnabled_",
+      "_notifToUser_",
+      "_notifTodayID_"
+    ]
+  },
+  {
+    "name": "_notifPicketSubstituted_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1737,
+    "lines": 41,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifGetName_",
+      "_notifIsKbmEnabled_",
+      "_notifToUser_",
+      "_notifTodayID_"
+    ]
+  },
+  {
+    "name": "_notifPicketSubCancelled_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1778,
+    "lines": 22,
+    "calls": [
+      "_notifBuildHtml_",
+      "_notifGetName_",
+      "_notifIsKbmEnabled_",
+      "_notifToUser_",
+      "_notifTodayID_"
+    ]
+  },
+  {
+    "name": "_notifKbmConfirmed_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1800,
+    "lines": 23,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifGetName_",
+      "_notifIsTeachingDay_",
+      "_notifToUser_",
+      "_notifTodayID_"
+    ]
+  },
+  {
+    "name": "_notifKbmRevoked_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1823,
+    "lines": 24,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifGetName_",
+      "_notifIsTeachingDay_",
+      "_notifToUser_",
+      "_notifTodayID_"
+    ]
+  },
+  {
+    "name": "_notifKbmSubstituted_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1847,
+    "lines": 50,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifGetName_",
+      "_notifIsTeachingDay_",
+      "_notifToUser_",
+      "_notifTodayID_"
+    ]
+  },
+  {
+    "name": "_notifKbmSubCancelled_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1897,
+    "lines": 23,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifGetName_",
+      "_notifIsTeachingDay_",
+      "_notifToUser_",
+      "_notifTodayID_"
+    ]
+  },
+  {
+    "name": "_notifAutoJurnalLiburGenerated_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 1920,
+    "lines": 144,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifCommitteeConfirmed_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2064,
+    "lines": 19,
+    "calls": [
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifCommitteeRevoked_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2083,
+    "lines": 19,
+    "calls": [
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifCommitteeSubstituted_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2102,
+    "lines": 42,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifCommitteeSubCancelled_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2144,
+    "lines": 19,
+    "calls": [
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifSupervisorConfirmed_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2163,
+    "lines": 23,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifSupervisorRevoked_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2186,
+    "lines": 22,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifSupervisorSubstituted_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2208,
+    "lines": 53,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifSupervisorSubCancelled_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2261,
+    "lines": 27,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_"
+    ]
+  },
+  {
+    "name": "_notifTodayID_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2288,
+    "lines": 3,
+    "calls": [
+      "_notifFmtDateLong_"
+    ]
+  },
+  {
+    "name": "_notifFmtTime_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2291,
+    "lines": 17,
+    "calls": []
+  },
+  {
+    "name": "_notifResolveDate_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2308,
+    "lines": 37,
+    "calls": []
+  },
+  {
+    "name": "_notifFmtDate_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2345,
+    "lines": 23,
+    "calls": [
+      "_notifResolveDate_"
+    ]
+  },
+  {
+    "name": "_notifFmtDateLong_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2368,
+    "lines": 33,
+    "calls": [
+      "_notifResolveDate_"
+    ]
+  },
+  {
+    "name": "_notifFmtDateTime_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2401,
+    "lines": 9,
+    "calls": [
+      "_notifFmtDate_",
+      "_notifResolveDate_"
+    ]
+  },
+  {
+    "name": "_notifFmtDateLongTime_",
+    "source": "src/server/notifications/service.js",
+    "legacyLine": 2410,
+    "lines": 8,
+    "calls": [
+      "_notifFmtDateLong_",
+      "_notifResolveDate_"
+    ]
+  },
+  {
+    "name": "_checkPasswordComplexity",
+    "source": "src/server/auth/password-policy.js",
+    "legacyLine": 2418,
+    "lines": 40,
+    "calls": []
+  },
+  {
+    "name": "_extUsersSheet_",
+    "source": "src/server/auth/external-users.js",
+    "legacyLine": 2458,
+    "lines": 5,
+    "calls": []
+  },
+  {
+    "name": "_extFindUserRow_",
+    "source": "src/server/auth/external-users.js",
+    "legacyLine": 2463,
+    "lines": 11,
+    "calls": [
+      "_extUsersSheet_"
+    ]
+  },
+  {
+    "name": "_extGetPassword_",
+    "source": "src/server/auth/external-users.js",
+    "legacyLine": 2474,
+    "lines": 4,
+    "calls": [
+      "_extFindUserRow_"
+    ]
+  },
+  {
+    "name": "_extSetPassword_",
+    "source": "src/server/auth/external-users.js",
+    "legacyLine": 2478,
+    "lines": 13,
+    "calls": [
+      "_extUsersSheet_"
+    ]
+  },
+  {
+    "name": "_extAddUser_",
+    "source": "src/server/auth/external-users.js",
+    "legacyLine": 2491,
+    "lines": 7,
+    "calls": [
+      "_extUsersSheet_"
+    ]
+  },
+  {
+    "name": "_extUpdateUsername_",
+    "source": "src/server/auth/external-users.js",
+    "legacyLine": 2498,
+    "lines": 13,
+    "calls": [
+      "_extUsersSheet_"
+    ]
+  },
+  {
+    "name": "_extDeleteUser_",
+    "source": "src/server/auth/external-users.js",
+    "legacyLine": 2511,
+    "lines": 13,
+    "calls": [
+      "_extUsersSheet_"
+    ]
+  },
+  {
+    "name": "getAllSchedulesAdmin",
+    "source": "src/server/schedules/service.js",
+    "legacyLine": 2524,
+    "lines": 40,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveScheduleAdmin",
+    "source": "src/server/schedules/service.js",
+    "legacyLine": 2564,
+    "lines": 40,
+    "calls": [
+      "generateId",
+      "getDayName",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteScheduleAdmin",
+    "source": "src/server/schedules/service.js",
+    "legacyLine": 2604,
+    "lines": 3,
+    "calls": [
+      "deleteRowById"
+    ]
+  },
+  {
+    "name": "deleteMultipleSchedulesAdmin",
+    "source": "src/server/schedules/service.js",
+    "legacyLine": 2607,
+    "lines": 20,
+    "calls": [
+      "deleteRowById",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getMyWeeklyData",
+    "source": "src/server/schedules/service.js",
+    "legacyLine": 2627,
+    "lines": 112,
+    "calls": [
+      "formatDateIndo",
+      "formatRupiah",
+      "getData",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getDayName",
+    "source": "src/server/schedules/service.js",
+    "legacyLine": 2739,
+    "lines": 4,
+    "calls": []
+  },
+  {
+    "name": "saveTeachingJournal",
+    "source": "src/server/journals/service.js",
+    "legacyLine": 2743,
+    "lines": 246,
+    "calls": [
+      "_getConfigMap",
+      "_invalidateDataSnapshot",
+      "_jtmReadAdjustment_",
+      "generateId",
+      "getData",
+      "getSheet",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getClassExpectedStudents",
+    "source": "src/server/journals/service.js",
+    "legacyLine": 2989,
+    "lines": 20,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getPicketRekapForDate",
+    "source": "src/server/journals/service.js",
+    "legacyLine": 3012,
+    "lines": 38,
+    "calls": [
+      "getData",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "updateTeachingLog",
+    "source": "src/server/journals/service.js",
+    "legacyLine": 3050,
+    "lines": 127,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getData",
+      "getSheet",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getSettingsMasterData",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3177,
+    "lines": 48,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveSystemConfig",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3225,
+    "lines": 38,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveSubject",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3263,
+    "lines": 36,
+    "calls": [
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteSubject",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3299,
+    "lines": 3,
+    "calls": [
+      "deleteRowById"
+    ]
+  },
+  {
+    "name": "saveAllowance",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3302,
+    "lines": 28,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteAllowance",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3330,
+    "lines": 3,
+    "calls": [
+      "deleteRowById"
+    ]
+  },
+  {
+    "name": "addHoliday",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3333,
+    "lines": 40,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteHoliday",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3373,
+    "lines": 29,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteRowById",
+    "source": "src/server/settings/service.js",
+    "legacyLine": 3402,
+    "lines": 17,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_annBool_",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3419,
+    "lines": 6,
+    "calls": []
+  },
+  {
+    "name": "_annDateOnly_",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3425,
+    "lines": 16,
+    "calls": []
+  },
+  {
+    "name": "_annParseIdList_",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3441,
+    "lines": 27,
+    "calls": []
+  },
+  {
+    "name": "_annStringifyIdList_",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3468,
+    "lines": 12,
+    "calls": []
+  },
+  {
+    "name": "_annEnsureSheet_",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3480,
+    "lines": 54,
+    "calls": [
+      "getDbId"
+    ]
+  },
+  {
+    "name": "getActiveAnnouncementsForUser",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3534,
+    "lines": 61,
+    "calls": [
+      "_annBool_",
+      "_annDateOnly_",
+      "_annEnsureSheet_",
+      "_annParseIdList_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "listAnnouncementsAdmin",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3595,
+    "lines": 38,
+    "calls": [
+      "_annBool_",
+      "_annDateOnly_",
+      "_annEnsureSheet_",
+      "_annParseIdList_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveAnnouncement",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3633,
+    "lines": 208,
+    "calls": [
+      "_annBool_",
+      "_annEnsureSheet_",
+      "_annStringifyIdList_",
+      "_invalidateDataSnapshot",
+      "checkAndSendAnnouncementEmails",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "toggleAnnouncement",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3841,
+    "lines": 24,
+    "calls": [
+      "_annBool_",
+      "_annEnsureSheet_",
+      "_invalidateDataSnapshot",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteAnnouncement",
+    "source": "src/server/announcements/service.js",
+    "legacyLine": 3865,
+    "lines": 3,
+    "calls": [
+      "deleteRowById"
+    ]
+  },
+  {
+    "name": "getBlokJurnal",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 3871,
+    "lines": 26,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "simpanBlokJurnal",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 3898,
+    "lines": 49,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "hapusBlokJurnal",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 3948,
+    "lines": 11,
+    "calls": [
+      "deleteRowById",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "cekBlokJurnal",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 3960,
+    "lines": 33,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getBlokAcara",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 3997,
+    "lines": 22,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "simpanBlokAcara",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4020,
+    "lines": 44,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "hapusBlokAcara",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4065,
+    "lines": 21,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "cekBlokAcara",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4087,
+    "lines": 27,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "isTransportBlocked",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4118,
+    "lines": 10,
+    "calls": [
+      "_isDateBlockedByList",
+      "_loadBlokTransportActive"
+    ]
+  },
+  {
+    "name": "_loadBlokTransportActive",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4134,
+    "lines": 10,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_isDateBlockedByList",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4152,
+    "lines": 11,
+    "calls": []
+  },
+  {
+    "name": "getBlokTransport",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4167,
+    "lines": 27,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "simpanBlokTransport",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4195,
+    "lines": 51,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "hapusBlokTransport",
+    "source": "src/server/settings/blocks.js",
+    "legacyLine": 4247,
+    "lines": 27,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "checkAndSendAnnouncementEmails",
+    "source": "src/server/announcements/scheduler.js",
+    "legacyLine": 4275,
+    "lines": 146,
+    "calls": [
+      "_annBool_",
+      "_annDateOnly_",
+      "_annEnsureSheet_",
+      "_isValidEmail_",
+      "formatDateIndo",
+      "getData"
+    ]
+  },
+  {
+    "name": "installAnnouncementTrigger",
+    "source": "src/server/announcements/scheduler.js",
+    "legacyLine": 4421,
+    "lines": 19,
+    "calls": []
+  },
+  {
+    "name": "doGet",
+    "source": "src/server/web/entry.js",
+    "legacyLine": 4440,
+    "lines": 25,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_sidebar",
+    "source": "src/server/web/sidebar.js",
+    "legacyLine": 4465,
+    "lines": 684,
+    "calls": []
+  },
+  {
+    "name": "_navbar",
+    "source": "src/server/web/navbar.js",
+    "legacyLine": 5149,
+    "lines": 156,
+    "calls": []
+  },
+  {
+    "name": "_footer",
+    "source": "src/server/web/footer.js",
+    "legacyLine": 5305,
+    "lines": 138,
+    "calls": []
+  },
+  {
+    "name": "_modal",
+    "source": "src/server/web/modals.js",
+    "legacyLine": 5443,
+    "lines": 1982,
+    "calls": []
+  },
+  {
+    "name": "getPageContent",
+    "source": "src/server/web/router.js",
+    "legacyLine": 7425,
+    "lines": 7740,
+    "calls": [
+      "_footer",
+      "_modal",
+      "_navbar",
+      "_sidebar",
+      "getPageContent"
+    ]
+  },
+  {
+    "name": "getDashboardStats",
+    "source": "src/server/dashboard/teacher.js",
+    "legacyLine": 15165,
+    "lines": 169,
+    "calls": [
+      "_applyThreePointRounding",
+      "_calculateMonthlyBonusFast_Detailed",
+      "_computeEventJtm",
+      "_getDataSnapshot",
+      "_getMonthlyTransportSumFast",
+      "_jtmBuildKbmAdjustmentMap_",
+      "_jtmBuildPiketAdjustmentMap_",
+      "_jtmResolveKbmLogJtm_",
+      "_jtmResolvePiketLogJtm_",
+      "formatRupiah",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_calculateMonthlyBonusFast_Detailed",
+    "source": "src/server/dashboard/teacher.js",
+    "legacyLine": 15334,
+    "lines": 55,
+    "calls": []
+  },
+  {
+    "name": "_getIndoDayIndex",
+    "source": "src/server/dashboard/teacher.js",
+    "legacyLine": 15389,
+    "lines": 6,
+    "calls": []
+  },
+  {
+    "name": "_getConfigMap",
+    "source": "src/server/dashboard/teacher.js",
+    "legacyLine": 15395,
+    "lines": 6,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "getTodaySchedule",
+    "source": "src/server/dashboard/teacher.js",
+    "legacyLine": 15401,
+    "lines": 184,
+    "calls": [
+      "_getDataSnapshot",
+      "_getIndoDayIndex",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteTeachingLog",
+    "source": "src/server/journals/delete.js",
+    "legacyLine": 15585,
+    "lines": 32,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getAdminDashboardData_V2",
+    "source": "src/server/dashboard/admin.js",
+    "legacyLine": 15617,
+    "lines": 183,
+    "calls": [
+      "_calculateMonthlyBonusFast_Detailed",
+      "_computeEventJtm",
+      "_getDataSnapshot",
+      "_getIndoDayIndex",
+      "_getMonthlyTransportSumFast",
+      "_jtmBuildKbmAdjustmentMap_",
+      "_jtmBuildPiketAdjustmentMap_",
+      "_jtmResolveKbmLogJtm_",
+      "_jtmResolvePiketLogJtm_",
+      "formatRupiah",
+      "safeTime",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getAdminDailyAttendance",
+    "source": "src/server/dashboard/admin.js",
+    "legacyLine": 15800,
+    "lines": 71,
+    "calls": [
+      "_getDataSnapshot",
+      "_getIndoDayIndex",
+      "safeTime",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getAdminDailyAttendanceHistory",
+    "source": "src/server/dashboard/admin.js",
+    "legacyLine": 15871,
+    "lines": 128,
+    "calls": [
+      "formatRupiah",
+      "getConfigValue",
+      "getData",
+      "safeDate",
+      "safeTime",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_attendanceScheduleColIndex_",
+    "source": "src/server/attendance/teacher-confirmation.js",
+    "legacyLine": 15999,
+    "lines": 15,
+    "calls": []
+  },
+  {
+    "name": "confirmTeacherPresence",
+    "source": "src/server/attendance/teacher-confirmation.js",
+    "legacyLine": 16014,
+    "lines": 54,
+    "calls": [
+      "_attendanceScheduleColIndex_",
+      "_isPicketOfficer",
+      "_notifKbmConfirmed_",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "revokeTeacherPresence",
+    "source": "src/server/attendance/teacher-confirmation.js",
+    "legacyLine": 16068,
+    "lines": 58,
+    "calls": [
+      "_attendanceScheduleColIndex_",
+      "_isPicketOfficer",
+      "_jtmReverseOccurrence_",
+      "_notifKbmRevoked_",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getPicketPageData",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16126,
+    "lines": 246,
+    "calls": [
+      "_getConfigMap",
+      "_getIndoDayIndex",
+      "formatDateIndo",
+      "getData",
+      "getSheet",
+      "safeDate",
+      "safeTime",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_isPicketOfficer",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16372,
+    "lines": 46,
+    "calls": [
+      "_getIndoDayIndex",
+      "getData",
+      "safeDate"
+    ]
+  },
+  {
+    "name": "_hasTimeInToday",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16418,
+    "lines": 9,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "savePicketSchedule",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16427,
+    "lines": 38,
+    "calls": [
+      "findData",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "revokePicketDaily",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16465,
+    "lines": 62,
+    "calls": [
+      "_attendanceScheduleColIndex_",
+      "_examDeleteLogByRef_",
+      "_invalidateDataSnapshot",
+      "_jtmDeleteAdjustment_",
+      "_jtmDeleteAllReallocationsForOccurrence_",
+      "_jtmReadReallocations_",
+      "_notifPicketRevoked_",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "substitutePicketDaily",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16527,
+    "lines": 98,
+    "calls": [
+      "_getIndoDayIndex",
+      "_isPicketOfficer",
+      "_notifPicketSubstituted_",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "cancelPicketSubstituteAttendance",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16625,
+    "lines": 61,
+    "calls": [
+      "_attendanceScheduleColIndex_",
+      "_notifPicketSubCancelled_",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deletePicketSchedule",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16686,
+    "lines": 3,
+    "calls": [
+      "deleteRowById"
+    ]
+  },
+  {
+    "name": "confirmPicketDaily",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16689,
+    "lines": 82,
+    "calls": [
+      "_getIndoDayIndex",
+      "_isPicketOfficer",
+      "_notifPicketConfirmed_",
+      "generateId",
+      "getData",
+      "getSheet",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "confirmPicketSubPresenceBackend",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16771,
+    "lines": 36,
+    "calls": [
+      "_attendanceScheduleColIndex_",
+      "confirmPicketDaily",
+      "confirmTeacherPresence",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "getPicketStatus",
+    "source": "src/server/picket/service.js",
+    "legacyLine": 16807,
+    "lines": 11,
+    "calls": [
+      "_getIndoDayIndex",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "calculateMonthlyBonus",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 16818,
+    "lines": 4,
+    "calls": [
+      "_calculateMonthlyBonusFast",
+      "_getDataSnapshot"
+    ]
+  },
+  {
+    "name": "getAvailableHonorPeriods",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 16822,
+    "lines": 31,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_sendHonorariumEmail",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 16853,
+    "lines": 155,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "getConfigValue"
+    ]
+  },
+  {
+    "name": "_processHonorariumFinalization",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17008,
+    "lines": 161,
+    "calls": [
+      "_applyThreePointRounding",
+      "_computeEventJtm",
+      "_getMonthlyTransportSum",
+      "_jtmBuildKbmAdjustmentMap_",
+      "_jtmBuildPiketAdjustmentMap_",
+      "_jtmResolveKbmLogJtm_",
+      "_jtmResolvePiketLogJtm_",
+      "_sendHonorariumEmail",
+      "calculateMonthlyBonus",
+      "formatPeriode",
+      "generateId",
+      "getConfigValue",
+      "getData",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "saveMonthlyHonorarium",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17169,
+    "lines": 15,
+    "calls": [
+      "_processHonorariumFinalization",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "autoFinalizeHonorarium",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17184,
+    "lines": 10,
+    "calls": [
+      "_processHonorariumFinalization"
+    ]
+  },
+  {
+    "name": "setupAutoFinalizeTrigger",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17194,
+    "lines": 14,
+    "calls": []
+  },
+  {
+    "name": "getMyHonorariumData",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17208,
+    "lines": 375,
+    "calls": [
+      "_calculateMonthlyBonusFast",
+      "_computeEventJtm",
+      "_getDataSnapshot",
+      "_getMonthlyTransportSumFast",
+      "_jtmBuildKbmAdjustmentMap_",
+      "_jtmBuildPiketAdjustmentMap_",
+      "_jtmResolveKbmLogJtm_",
+      "_jtmResolvePiketLogJtm_",
+      "formatPeriode",
+      "formatRupiah",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_calculateMonthlyBonusFast",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17583,
+    "lines": 44,
+    "calls": []
+  },
+  {
+    "name": "getAdminHonorRecap",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17627,
+    "lines": 158,
+    "calls": [
+      "_applyThreePointRounding",
+      "_calculateMonthlyBonusFast_Detailed",
+      "_computeEventJtm",
+      "_getDataSnapshot",
+      "_getMonthlyTransportSumFast",
+      "_jtmBuildKbmAdjustmentMap_",
+      "_jtmBuildPiketAdjustmentMap_",
+      "_jtmResolveKbmLogJtm_",
+      "_jtmResolvePiketLogJtm_",
+      "formatRupiah",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getHonorariumHistoryGuru",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17785,
+    "lines": 68,
+    "calls": [
+      "_getDataSnapshot",
+      "formatPeriode",
+      "formatRupiah",
+      "getPeriodeSortKey",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getHonorariumHistoryAdmin",
+    "source": "src/server/honorarium/service.js",
+    "legacyLine": 17853,
+    "lines": 78,
+    "calls": [
+      "_getDataSnapshot",
+      "formatPeriode",
+      "formatRupiah",
+      "getPeriodeSortKey",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getAllUsers",
+    "source": "src/server/users/admin.js",
+    "legacyLine": 17931,
+    "lines": 15,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_validateKmDistance_",
+    "source": "src/server/users/admin.js",
+    "legacyLine": 17946,
+    "lines": 32,
+    "calls": []
+  },
+  {
+    "name": "_validateAdditionalRole_",
+    "source": "src/server/users/admin.js",
+    "legacyLine": 17978,
+    "lines": 13,
+    "calls": []
+  },
+  {
+    "name": "saveUser",
+    "source": "src/server/users/admin.js",
+    "legacyLine": 17991,
+    "lines": 119,
+    "calls": [
+      "_ensureUserColumn_",
+      "_extAddUser_",
+      "_extUpdateUsername_",
+      "_invalidateDataSnapshot",
+      "_validateAdditionalRole_",
+      "_validateKmDistance_",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteUser",
+    "source": "src/server/users/admin.js",
+    "legacyLine": 18110,
+    "lines": 12,
+    "calls": [
+      "_extDeleteUser_",
+      "deleteRowById",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "resetUserPassword",
+    "source": "src/server/users/admin.js",
+    "legacyLine": 18122,
+    "lines": 26,
+    "calls": [
+      "_extSetPassword_",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getConfigValue",
+    "source": "src/server/settings/lookup.js",
+    "legacyLine": 18148,
+    "lines": 5,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "savePdfToDrive",
+    "source": "src/server/exports/pdf.js",
+    "legacyLine": 18153,
+    "lines": 15,
+    "calls": []
+  },
+  {
+    "name": "getAdminJournalHistory",
+    "source": "src/server/journals/admin-history.js",
+    "legacyLine": 18168,
+    "lines": 224,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveCeremonySchedule",
+    "source": "src/server/ceremony/service.js",
+    "legacyLine": 18392,
+    "lines": 46,
+    "calls": [
+      "generateId",
+      "getData",
+      "getSheet",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteCeremonySchedule",
+    "source": "src/server/ceremony/service.js",
+    "legacyLine": 18438,
+    "lines": 3,
+    "calls": [
+      "deleteRowById"
+    ]
+  },
+  {
+    "name": "confirmCeremonyLeader",
+    "source": "src/server/ceremony/service.js",
+    "legacyLine": 18441,
+    "lines": 43,
+    "calls": [
+      "confirmTeacherPresence",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "revokeCeremonyLeader",
+    "source": "src/server/ceremony/service.js",
+    "legacyLine": 18484,
+    "lines": 27,
+    "calls": [
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "substituteCeremonyLeader",
+    "source": "src/server/ceremony/service.js",
+    "legacyLine": 18511,
+    "lines": 78,
+    "calls": [
+      "_isPicketOfficer",
+      "findData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "assignSubstitute",
+    "source": "src/server/substitutes/service.js",
+    "legacyLine": 18589,
+    "lines": 81,
+    "calls": [
+      "_notifKbmSubstituted_",
+      "findData",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "replaceSubstitute",
+    "source": "src/server/substitutes/service.js",
+    "legacyLine": 18670,
+    "lines": 33,
+    "calls": [
+      "_isPicketOfficer",
+      "assignSubstitute",
+      "revokeSubstitute",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "revokeSubstitute",
+    "source": "src/server/substitutes/service.js",
+    "legacyLine": 18703,
+    "lines": 148,
+    "calls": [
+      "_attendanceScheduleColIndex_",
+      "_examDeleteLogByRef_",
+      "_invalidateDataSnapshot",
+      "_isPicketOfficer",
+      "_jtmDeleteAdjustment_",
+      "_jtmDeleteAllReallocationsForOccurrence_",
+      "_jtmReadReallocations_",
+      "_notifKbmSubCancelled_",
+      "findData",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getTodaySubstitutes",
+    "source": "src/server/substitutes/service.js",
+    "legacyLine": 18851,
+    "lines": 68,
+    "calls": [
+      "getData",
+      "safeDate",
+      "safeTime",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "safeDate",
+    "source": "src/server/core/date.js",
+    "legacyLine": 18919,
+    "lines": 6,
+    "calls": []
+  },
+  {
+    "name": "safeTime",
+    "source": "src/server/core/date.js",
+    "legacyLine": 18925,
+    "lines": 6,
+    "calls": []
+  },
+  {
+    "name": "verifyForgotSecurityAnswer",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 18931,
+    "lines": 45,
+    "calls": [
+      "_issueForgotResetToken_",
+      "findData"
+    ]
+  },
+  {
+    "name": "_issueForgotResetToken_",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 18976,
+    "lines": 14,
+    "calls": []
+  },
+  {
+    "name": "_consumeForgotResetToken_",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 18990,
+    "lines": 39,
+    "calls": []
+  },
+  {
+    "name": "getForgotMethods",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19029,
+    "lines": 15,
+    "calls": [
+      "_isValidEmail_",
+      "_maskEmail_",
+      "findData"
+    ]
+  },
+  {
+    "name": "_maskEmail_",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19044,
+    "lines": 13,
+    "calls": []
+  },
+  {
+    "name": "requestForgotPasswordOTP",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19057,
+    "lines": 103,
+    "calls": [
+      "_escHtml_",
+      "_isValidEmail_",
+      "_maskEmail_",
+      "findData"
+    ]
+  },
+  {
+    "name": "requestPasswordResetByOTP",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19160,
+    "lines": 65,
+    "calls": [
+      "_issueForgotResetToken_",
+      "findData"
+    ]
+  },
+  {
+    "name": "resetPasswordWithToken",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19225,
+    "lines": 118,
+    "calls": [
+      "_checkPasswordComplexity",
+      "_consumeForgotResetToken_",
+      "_escHtml_",
+      "_extGetPassword_",
+      "_extSetPassword_",
+      "_invalidateDataSnapshot",
+      "_isValidEmail_",
+      "findData",
+      "getData",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "getSecurityQuestion",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19343,
+    "lines": 13,
+    "calls": [
+      "findData"
+    ]
+  },
+  {
+    "name": "getMySecurityQuestion",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19356,
+    "lines": 6,
+    "calls": [
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveSecurityQuestion",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19362,
+    "lines": 41,
+    "calls": [
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getResetRequests",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19403,
+    "lines": 31,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "approveResetRequest",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19434,
+    "lines": 17,
+    "calls": [
+      "findData",
+      "getSheet",
+      "resetUserPassword",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getPendingResetCount",
+    "source": "src/server/auth/recovery.js",
+    "legacyLine": 19451,
+    "lines": 8,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "validateDocument",
+    "source": "src/server/exports/verification.js",
+    "legacyLine": 19459,
+    "lines": 65,
+    "calls": [
+      "findData",
+      "formatDateIndo",
+      "formatPeriode",
+      "formatRupiah",
+      "getData"
+    ]
+  },
+  {
+    "name": "getGuruJournalHistoryPaginated",
+    "source": "src/server/journals/teacher-history.js",
+    "legacyLine": 19524,
+    "lines": 224,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "generateAutoJurnalForHoliday",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 19748,
+    "lines": 9,
+    "calls": [
+      "_runAutoJurnalForHoliday_",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_runAutoJurnalForHoliday_",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 19757,
+    "lines": 370,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "_notifAutoJurnalLiburGenerated_",
+      "generateId",
+      "getData",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "checkAutoJurnalStatus",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 20127,
+    "lines": 111,
+    "calls": [
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "cancelAutoJurnalForHoliday",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 20238,
+    "lines": 127,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "runAutoJurnalScheduler",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 20365,
+    "lines": 50,
+    "calls": [
+      "_runAutoJurnalForHoliday_",
+      "getData"
+    ]
+  },
+  {
+    "name": "installAutoJurnalScheduler",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 20415,
+    "lines": 24,
+    "calls": [
+      "uninstallAutoJurnalScheduler"
+    ]
+  },
+  {
+    "name": "uninstallAutoJurnalScheduler",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 20439,
+    "lines": 19,
+    "calls": []
+  },
+  {
+    "name": "getAutoJurnalSchedulerStatus",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 20458,
+    "lines": 25,
+    "calls": [
+      "verifySession"
+    ]
+  },
+  {
+    "name": "installAutoJurnalSchedulerByAdmin",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 20483,
+    "lines": 10,
+    "calls": [
+      "installAutoJurnalScheduler",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "uninstallAutoJurnalSchedulerByAdmin",
+    "source": "src/server/journals/holiday-automation.js",
+    "legacyLine": 20493,
+    "lines": 10,
+    "calls": [
+      "uninstallAutoJurnalScheduler",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "runReminderScheduler",
+    "source": "src/server/notifications/reminders.js",
+    "legacyLine": 20503,
+    "lines": 41,
+    "calls": [
+      "_reminderMissingBap_",
+      "_reminderMissingJournal_",
+      "_reminderPendingKbm_",
+      "_reminderPendingSupervisor_"
+    ]
+  },
+  {
+    "name": "_reminderMissingJournal_",
+    "source": "src/server/notifications/reminders.js",
+    "legacyLine": 20544,
+    "lines": 224,
+    "calls": [
+      "_escHtml_",
+      "_getConfigMap",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifFmtDate_",
+      "_notifFmtTime_",
+      "_notifGetName_",
+      "_notifIsHoliday_",
+      "_notifIsTeachingDay_",
+      "_notifToUser_",
+      "getData"
+    ]
+  },
+  {
+    "name": "_reminderMissingBap_",
+    "source": "src/server/notifications/reminders.js",
+    "legacyLine": 20768,
+    "lines": 107,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifFmtDate_",
+      "_notifFmtTime_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_",
+      "getData"
+    ]
+  },
+  {
+    "name": "_reminderPendingKbm_",
+    "source": "src/server/notifications/reminders.js",
+    "legacyLine": 20875,
+    "lines": 120,
+    "calls": [
+      "_escHtml_",
+      "_getConfigMap",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifFmtDate_",
+      "_notifGetName_",
+      "_notifIsTeachingDay_",
+      "_notifToUser_",
+      "getData"
+    ]
+  },
+  {
+    "name": "_reminderPendingSupervisor_",
+    "source": "src/server/notifications/reminders.js",
+    "legacyLine": 20995,
+    "lines": 102,
+    "calls": [
+      "_escHtml_",
+      "_notifBuildHtml_",
+      "_notifFmtDateLong_",
+      "_notifFmtDate_",
+      "_notifGetName_",
+      "_notifIsExamEnabled_",
+      "_notifToUser_",
+      "getData"
+    ]
+  },
+  {
+    "name": "formatPeriode",
+    "source": "src/server/core/period.js",
+    "legacyLine": 21097,
+    "lines": 51,
+    "calls": []
+  },
+  {
+    "name": "getPeriodeSortKey",
+    "source": "src/server/core/period.js",
+    "legacyLine": 21148,
+    "lines": 34,
+    "calls": []
+  },
+  {
+    "name": "_invalidateDataSnapshot",
+    "source": "src/server/core/snapshot.js",
+    "legacyLine": 21185,
+    "lines": 4,
+    "calls": []
+  },
+  {
+    "name": "_getDataSnapshot",
+    "source": "src/server/core/snapshot.js",
+    "legacyLine": 21189,
+    "lines": 110,
+    "calls": [
+      "_getConfigMap",
+      "getData"
+    ]
+  },
+  {
+    "name": "getHonorariumSlipByHistory",
+    "source": "src/server/honorarium/history-slip.js",
+    "legacyLine": 21299,
+    "lines": 225,
+    "calls": [
+      "_computeEventJtm",
+      "_getConfigMap",
+      "_getMonthlyTransportSum",
+      "findData",
+      "formatDateIndo",
+      "formatPeriode",
+      "formatRupiah",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "addHolidayRange",
+    "source": "src/server/settings/holiday-range.js",
+    "legacyLine": 21524,
+    "lines": 37,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getAdminDashboardExtendedStats",
+    "source": "src/server/dashboard/extended.js",
+    "legacyLine": 21561,
+    "lines": 304,
+    "calls": [
+      "_getConfigMap",
+      "_getIndoDayIndex",
+      "_jtmBuildPiketAdjustmentMap_",
+      "_jtmResolvePiketLogJtm_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getAdminDashboardPicketStatus",
+    "source": "src/server/picket/admin.js",
+    "legacyLine": 21876,
+    "lines": 125,
+    "calls": [
+      "_getDataSnapshot",
+      "_getIndoDayIndex",
+      "getData",
+      "safeDate",
+      "safeTime",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "adminInputPicketTime",
+    "source": "src/server/picket/admin.js",
+    "legacyLine": 22010,
+    "lines": 99,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getSheet",
+      "safeDate",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getGuruTodayScheduleProgress",
+    "source": "src/server/dashboard/progress.js",
+    "legacyLine": 22110,
+    "lines": 264,
+    "calls": [
+      "_getConfigMap",
+      "_getIndoDayIndex",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_examNow_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22374,
+    "lines": 7,
+    "calls": []
+  },
+  {
+    "name": "_examToday_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22381,
+    "lines": 3,
+    "calls": []
+  },
+  {
+    "name": "_examGetSession_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22384,
+    "lines": 7,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_examGetRoom_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22391,
+    "lines": 6,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_examGetRoomsBySession_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22397,
+    "lines": 5,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_examGetSessionsByPeriod_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22402,
+    "lines": 5,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_examDeleteBySet_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22407,
+    "lines": 10,
+    "calls": [
+      "getSheet"
+    ]
+  },
+  {
+    "name": "_examDeleteById_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22417,
+    "lines": 11,
+    "calls": [
+      "getSheet"
+    ]
+  },
+  {
+    "name": "_examFormatTime_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22428,
+    "lines": 6,
+    "calls": []
+  },
+  {
+    "name": "_examCheckSupervisorConflict_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22434,
+    "lines": 19,
+    "calls": [
+      "_examGetRoomsBySession_",
+      "_examGetSession_",
+      "getData"
+    ]
+  },
+  {
+    "name": "_examCheckCommitteeConflict_",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22453,
+    "lines": 14,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "getExamPeriods",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22467,
+    "lines": 35,
+    "calls": [
+      "_examToday_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "addExamPeriod",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22502,
+    "lines": 52,
+    "calls": [
+      "_examNow_",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "editExamPeriod",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22554,
+    "lines": 67,
+    "calls": [
+      "_examToday_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteExamPeriod",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22621,
+    "lines": 73,
+    "calls": [
+      "_examDeleteById_",
+      "_examDeleteBySet_",
+      "_examDeleteLogByRef_",
+      "_examGetSessionsByPeriod_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "addExamSession",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22694,
+    "lines": 75,
+    "calls": [
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "editExamSession",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22769,
+    "lines": 70,
+    "calls": [
+      "_examGetRoomsBySession_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteExamSession",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22839,
+    "lines": 36,
+    "calls": [
+      "_examDeleteById_",
+      "_examDeleteBySet_",
+      "_examGetRoomsBySession_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "addExamRoom",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22875,
+    "lines": 43,
+    "calls": [
+      "_examGetSession_",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "editExamRoom",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22918,
+    "lines": 53,
+    "calls": [
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteExamRoom",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 22971,
+    "lines": 33,
+    "calls": [
+      "_examDeleteById_",
+      "_examDeleteBySet_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "assignExamSupervisor",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 23004,
+    "lines": 55,
+    "calls": [
+      "_examCheckSupervisorConflict_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "editExamSupervisor",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 23059,
+    "lines": 85,
+    "calls": [
+      "_examCheckSupervisorConflict_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "removeExamSupervisor",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 23144,
+    "lines": 34,
+    "calls": [
+      "_examDeleteById_",
+      "_examDeleteBySet_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "assignExamCommittee",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 23178,
+    "lines": 67,
+    "calls": [
+      "_examCheckCommitteeConflict_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "removeExamCommittee",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 23245,
+    "lines": 33,
+    "calls": [
+      "_examDeleteById_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getExamAdminMasterData",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 23278,
+    "lines": 23,
+    "calls": [
+      "getData",
+      "getExamPeriods",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getExamPeriodDetail",
+    "source": "src/server/exams/catalog.js",
+    "legacyLine": 23301,
+    "lines": 125,
+    "calls": [
+      "_examFormatTime_",
+      "_examToday_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_examAddJtmLog_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23426,
+    "lines": 25,
+    "calls": [
+      "_examNow_",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "_examDeleteLogByRef_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23451,
+    "lines": 13,
+    "calls": [
+      "getSheet"
+    ]
+  },
+  {
+    "name": "_examUpdateLogByRef_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23464,
+    "lines": 13,
+    "calls": [
+      "getSheet"
+    ]
+  },
+  {
+    "name": "_examGetBap_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23477,
+    "lines": 7,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_examIsConfirmedPanitia_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23484,
+    "lines": 10,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_isPanitiaStudentAttendanceComplete_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23498,
+    "lines": 34,
+    "calls": [
+      "_getConfigMap",
+      "getData",
+      "safeDate"
+    ]
+  },
+  {
+    "name": "_isExamSupervisorForDate_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23532,
+    "lines": 23,
+    "calls": [
+      "getData"
+    ]
+  },
+  {
+    "name": "_examCheckAdminOrConfirmedPanitia_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23555,
+    "lines": 14,
+    "calls": [
+      "_examIsConfirmedPanitia_"
+    ]
+  },
+  {
+    "name": "_examCheckBapTiming_",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23569,
+    "lines": 26,
+    "calls": [
+      "_examToday_"
+    ]
+  },
+  {
+    "name": "confirmCommitteeAttendance",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23595,
+    "lines": 72,
+    "calls": [
+      "_examAddJtmLog_",
+      "_examNow_",
+      "_examToday_",
+      "_notifCommitteeConfirmed_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "revokeCommitteeAttendance",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23667,
+    "lines": 52,
+    "calls": [
+      "_examDeleteLogByRef_",
+      "_examToday_",
+      "_notifCommitteeRevoked_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "confirmSupervisorAttendance",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23719,
+    "lines": 79,
+    "calls": [
+      "_examCheckAdminOrConfirmedPanitia_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examNow_",
+      "_examToday_",
+      "_notifSupervisorConfirmed_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "revokeSupervisorAttendance",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23798,
+    "lines": 97,
+    "calls": [
+      "_examCheckAdminOrConfirmedPanitia_",
+      "_examDeleteLogByRef_",
+      "_examGetBap_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examToday_",
+      "_jtmReverseOccurrence_",
+      "_notifSupervisorRevoked_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "submitExamBAP",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 23895,
+    "lines": 152,
+    "calls": [
+      "_examAddJtmLog_",
+      "_examCheckBapTiming_",
+      "_examFormatTime_",
+      "_examGetBap_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examNow_",
+      "_examToday_",
+      "_invalidateDataSnapshot",
+      "_jtmReadAdjustment_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "editExamBAP",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 24047,
+    "lines": 114,
+    "calls": [
+      "_examCheckBapTiming_",
+      "_examFormatTime_",
+      "_examGetBap_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examNow_",
+      "_examToday_",
+      "_examUpdateLogByRef_",
+      "_invalidateDataSnapshot",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "substituteExamSupervisor",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 24161,
+    "lines": 111,
+    "calls": [
+      "_examCheckAdminOrConfirmedPanitia_",
+      "_examCheckSupervisorConflict_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examToday_",
+      "_notifSupervisorSubstituted_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "cancelExamSupervisorSubstitution",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 24272,
+    "lines": 127,
+    "calls": [
+      "_examCheckAdminOrConfirmedPanitia_",
+      "_examDeleteLogByRef_",
+      "_examGetBap_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examNow_",
+      "_examToday_",
+      "_notifSupervisorSubCancelled_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "substituteExamCommittee",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 24399,
+    "lines": 82,
+    "calls": [
+      "_examCheckCommitteeConflict_",
+      "_examToday_",
+      "_notifCommitteeSubstituted_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "cancelExamCommitteeSubstitution",
+    "source": "src/server/exams/attendance.js",
+    "legacyLine": 24481,
+    "lines": 96,
+    "calls": [
+      "_examDeleteLogByRef_",
+      "_examNow_",
+      "_examToday_",
+      "_notifCommitteeSubCancelled_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getExamPageData",
+    "source": "src/server/exams/queries.js",
+    "legacyLine": 24577,
+    "lines": 188,
+    "calls": [
+      "_examFormatTime_",
+      "_examToday_",
+      "_isPanitiaStudentAttendanceComplete_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getSupervisorBapDetail",
+    "source": "src/server/exams/queries.js",
+    "legacyLine": 24765,
+    "lines": 92,
+    "calls": [
+      "_examFormatTime_",
+      "_examToday_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getExamRecapData",
+    "source": "src/server/exams/queries.js",
+    "legacyLine": 24857,
+    "lines": 209,
+    "calls": [
+      "_examFormatTime_",
+      "_examToday_",
+      "_jtmReadAdjustment_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_cleanup",
+    "source": "src/server/exams/cleanup.js",
+    "legacyLine": 25066,
+    "lines": 13,
+    "calls": [
+      "deleteExamPeriod"
+    ]
+  },
+  {
+    "name": "_jtmNowIso_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25108,
+    "lines": 7,
+    "calls": []
+  },
+  {
+    "name": "_jtmGetAdjustmentsSheet_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25115,
+    "lines": 10,
+    "calls": [
+      "createSheetIfNeeded_",
+      "getDbId"
+    ]
+  },
+  {
+    "name": "_jtmGetReallocationsSheet_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25125,
+    "lines": 10,
+    "calls": [
+      "createSheetIfNeeded_",
+      "getDbId"
+    ]
+  },
+  {
+    "name": "_jtmColMap_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25135,
+    "lines": 9,
+    "calls": []
+  },
+  {
+    "name": "_jtmRowToObject_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25144,
+    "lines": 20,
+    "calls": []
+  },
+  {
+    "name": "_jtmBuildAdjustmentRecord_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25164,
+    "lines": 22,
+    "calls": [
+      "_jtmComputeDifference",
+      "_jtmNowIso_",
+      "_jtmValidateReason",
+      "generateId"
+    ]
+  },
+  {
+    "name": "_jtmAdjustmentRecordToRow_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25186,
+    "lines": 6,
+    "calls": []
+  },
+  {
+    "name": "_jtmFindAdjustmentRow_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25192,
+    "lines": 19,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetAdjustmentsSheet_",
+      "_jtmRowToObject_"
+    ]
+  },
+  {
+    "name": "_jtmReadAdjustment_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25211,
+    "lines": 4,
+    "calls": [
+      "_jtmFindAdjustmentRow_"
+    ]
+  },
+  {
+    "name": "_jtmBuildPiketAdjustmentMap_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25215,
+    "lines": 20,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetAdjustmentsSheet_"
+    ]
+  },
+  {
+    "name": "_jtmResolvePiketLogJtm_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25235,
+    "lines": 12,
+    "calls": []
+  },
+  {
+    "name": "_jtmBuildKbmAdjustmentMap_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25247,
+    "lines": 27,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetAdjustmentsSheet_"
+    ]
+  },
+  {
+    "name": "_jtmResolveKbmLogJtm_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25274,
+    "lines": 13,
+    "calls": []
+  },
+  {
+    "name": "_jtmUpsertAdjustment_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25287,
+    "lines": 15,
+    "calls": [
+      "_jtmAdjustmentRecordToRow_",
+      "_jtmFindAdjustmentRow_",
+      "_jtmGetAdjustmentsSheet_"
+    ]
+  },
+  {
+    "name": "_jtmDeleteAdjustment_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25302,
+    "lines": 18,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetAdjustmentsSheet_"
+    ]
+  },
+  {
+    "name": "_jtmReallocationRecordToRow_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25320,
+    "lines": 6,
+    "calls": []
+  },
+  {
+    "name": "_jtmCreateReallocation_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25326,
+    "lines": 16,
+    "calls": [
+      "_jtmGetReallocationsSheet_",
+      "_jtmNowIso_",
+      "_jtmReallocationRecordToRow_",
+      "generateId"
+    ]
+  },
+  {
+    "name": "_jtmReadReallocations_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25342,
+    "lines": 17,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetReallocationsSheet_",
+      "_jtmRowToObject_"
+    ]
+  },
+  {
+    "name": "_jtmReadReallocationById_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25359,
+    "lines": 14,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetReallocationsSheet_",
+      "_jtmRowToObject_"
+    ]
+  },
+  {
+    "name": "_jtmDeleteReallocation_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25373,
+    "lines": 15,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetReallocationsSheet_"
+    ]
+  },
+  {
+    "name": "_jtmDeleteReallocationsForOccurrence_",
+    "source": "src/server/jtm/repository.js",
+    "legacyLine": 25388,
+    "lines": 19,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetReallocationsSheet_"
+    ]
+  },
+  {
+    "name": "adjustOccurrenceJtm",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 25407,
+    "lines": 188,
+    "calls": [
+      "_examCheckAdminOrConfirmedPanitia_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examToday_",
+      "_invalidateDataSnapshot",
+      "_isPicketOfficer",
+      "_jtmAuthorizeExam",
+      "_jtmAuthorizeKbm",
+      "_jtmBuildAdjustmentRecord_",
+      "_jtmCheckConservation",
+      "_jtmReadReallocations_",
+      "_jtmUpsertAdjustment_",
+      "_jtmValidateAdjusted",
+      "_jtmValidateReason",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getOccurrenceJtmState",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 25595,
+    "lines": 10,
+    "calls": [
+      "_getOccurrenceJtmState_"
+    ]
+  },
+  {
+    "name": "_getOccurrenceJtmState_",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 25605,
+    "lines": 97,
+    "calls": [
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examToday_",
+      "_jtmComputeDifference",
+      "_jtmReadAdjustment_",
+      "_jtmReadReallocations_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "reallocateJtmDifference",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 25702,
+    "lines": 270,
+    "calls": [
+      "_examCheckAdminOrConfirmedPanitia_",
+      "_examDeleteLogByRef_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examToday_",
+      "_invalidateDataSnapshot",
+      "_isPicketOfficer",
+      "_jtmAddReallocationCreditLog_",
+      "_jtmAuthorizeExam",
+      "_jtmAuthorizeKbm",
+      "_jtmCheckConservation",
+      "_jtmCreateReallocation_",
+      "_jtmDeleteReallocation_",
+      "_jtmReadAdjustment_",
+      "_jtmReadReallocations_",
+      "_jtmSetReallocationLogId_",
+      "_jtmValidateAllocation",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_jtmAddReallocationCreditLog_",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 25972,
+    "lines": 22,
+    "calls": [
+      "_jtmNowIso_",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "_jtmSetReallocationLogId_",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 25994,
+    "lines": 17,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetReallocationsSheet_"
+    ]
+  },
+  {
+    "name": "removeReallocation",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 26011,
+    "lines": 82,
+    "calls": [
+      "_examCheckAdminOrConfirmedPanitia_",
+      "_examDeleteLogByRef_",
+      "_examToday_",
+      "_invalidateDataSnapshot",
+      "_isPicketOfficer",
+      "_jtmAuthorizeExam",
+      "_jtmAuthorizeKbm",
+      "_jtmDeleteReallocation_",
+      "_jtmReadReallocationById_",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "resetOccurrenceJtm",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 26093,
+    "lines": 138,
+    "calls": [
+      "_examCheckAdminOrConfirmedPanitia_",
+      "_examDeleteLogByRef_",
+      "_examGetRoom_",
+      "_examGetSession_",
+      "_examToday_",
+      "_invalidateDataSnapshot",
+      "_isPicketOfficer",
+      "_jtmAuthorizeExam",
+      "_jtmAuthorizeKbm",
+      "_jtmDeleteAdjustment_",
+      "_jtmDeleteAllReallocationsForOccurrence_",
+      "_jtmFindAdjustmentRow_",
+      "_jtmReadReallocations_",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_jtmDeleteAllReallocationsForOccurrence_",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 26231,
+    "lines": 21,
+    "calls": [
+      "_jtmColMap_",
+      "_jtmGetReallocationsSheet_"
+    ]
+  },
+  {
+    "name": "_jtmDeleteKbmOriginalLog_",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 26252,
+    "lines": 40,
+    "calls": [
+      "_jtmColMap_",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "_jtmReverseOccurrence_",
+    "source": "src/server/jtm/service.js",
+    "legacyLine": 26292,
+    "lines": 38,
+    "calls": [
+      "_examDeleteLogByRef_",
+      "_invalidateDataSnapshot",
+      "_jtmDeleteAdjustment_",
+      "_jtmDeleteKbmOriginalLog_",
+      "_jtmDeleteReallocationsForOccurrence_",
+      "_jtmReadReallocations_"
+    ]
+  },
+  {
+    "name": "getTransportConfig",
+    "source": "src/server/transport/config.js",
+    "legacyLine": 26330,
+    "lines": 22,
+    "calls": [
+      "_getConfigMap",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveTransportConfig",
+    "source": "src/server/transport/config.js",
+    "legacyLine": 26352,
+    "lines": 60,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_minutesBetween",
+    "source": "src/server/transport/rules.js",
+    "legacyLine": 26412,
+    "lines": 19,
+    "calls": []
+  },
+  {
+    "name": "_calcAttendancePercent",
+    "source": "src/server/transport/rules.js",
+    "legacyLine": 26431,
+    "lines": 9,
+    "calls": []
+  },
+  {
+    "name": "_calcDailyTransport",
+    "source": "src/server/transport/rules.js",
+    "legacyLine": 26440,
+    "lines": 30,
+    "calls": []
+  },
+  {
+    "name": "_applyThreePointRounding",
+    "source": "src/server/transport/rules.js",
+    "legacyLine": 26470,
+    "lines": 13,
+    "calls": []
+  },
+  {
+    "name": "_getMonthlyTransportSum",
+    "source": "src/server/transport/calculation.js",
+    "legacyLine": 26483,
+    "lines": 144,
+    "calls": [
+      "_calcDailyTransport",
+      "_isDateBlockedByList",
+      "_loadBlokTransportActive",
+      "_minutesBetween",
+      "findData",
+      "getConfigValue",
+      "getData"
+    ]
+  },
+  {
+    "name": "_getMonthlyTransportSumFast",
+    "source": "src/server/transport/calculation.js",
+    "legacyLine": 26628,
+    "lines": 147,
+    "calls": [
+      "_calcDailyTransport",
+      "_isDateBlockedByList",
+      "_loadBlokTransportActive",
+      "_minutesBetween"
+    ]
+  },
+  {
+    "name": "getDailyAttendanceList",
+    "source": "src/server/attendance/queries.js",
+    "legacyLine": 26775,
+    "lines": 605,
+    "calls": [
+      "_examIsConfirmedPanitia_",
+      "_getConfigMap",
+      "generateId",
+      "getData",
+      "getSheet",
+      "safeDate",
+      "safeTime",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveAttendanceTimeIn",
+    "source": "src/server/attendance/time.js",
+    "legacyLine": 27380,
+    "lines": 232,
+    "calls": [
+      "_examIsConfirmedPanitia_",
+      "_getConfigMap",
+      "_invalidateDataSnapshot",
+      "_isExamSupervisorForDate_",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveAttendanceTimeOut",
+    "source": "src/server/attendance/time.js",
+    "legacyLine": 27612,
+    "lines": 272,
+    "calls": [
+      "_examIsConfirmedPanitia_",
+      "_getConfigMap",
+      "_invalidateDataSnapshot",
+      "_isExamSupervisorForDate_",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getAttendanceRecord",
+    "source": "src/server/attendance/history.js",
+    "legacyLine": 27884,
+    "lines": 72,
+    "calls": [
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getMyAttendanceHistory",
+    "source": "src/server/attendance/history.js",
+    "legacyLine": 27956,
+    "lines": 291,
+    "calls": [
+      "_getConfigMap",
+      "_minutesBetween",
+      "getData",
+      "safeDate",
+      "safeTime",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "addExtraAttendee",
+    "source": "src/server/attendance/manual.js",
+    "legacyLine": 28247,
+    "lines": 206,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "findData",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveAttendanceManual",
+    "source": "src/server/attendance/manual.js",
+    "legacyLine": 28453,
+    "lines": 108,
+    "calls": [
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getAttendanceSchedTemplates",
+    "source": "src/server/attendance/schedule-templates.js",
+    "legacyLine": 28561,
+    "lines": 57,
+    "calls": [
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveAttendanceSchedTemplate",
+    "source": "src/server/attendance/schedule-templates.js",
+    "legacyLine": 28618,
+    "lines": 119,
+    "calls": [
+      "_applyTemplateToDateInternal",
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteAttendanceSchedTemplate",
+    "source": "src/server/attendance/schedule-templates.js",
+    "legacyLine": 28737,
+    "lines": 31,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_applyTemplateToDateInternal",
+    "source": "src/server/attendance/schedule-templates.js",
+    "legacyLine": 28768,
+    "lines": 153,
+    "calls": [
+      "_getConfigMap",
+      "generateId",
+      "getData",
+      "getSheet"
+    ]
+  },
+  {
+    "name": "applySchedTemplatesToDate",
+    "source": "src/server/attendance/schedule-templates.js",
+    "legacyLine": 28921,
+    "lines": 87,
+    "calls": [
+      "_applyTemplateToDateInternal",
+      "_invalidateDataSnapshot",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveAttendanceSched",
+    "source": "src/server/attendance/schedule-and-leave.js",
+    "legacyLine": 29008,
+    "lines": 113,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveAttendanceLeave",
+    "source": "src/server/attendance/schedule-and-leave.js",
+    "legacyLine": 29121,
+    "lines": 186,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteAttendanceLeave",
+    "source": "src/server/attendance/schedule-and-leave.js",
+    "legacyLine": 29307,
+    "lines": 87,
+    "calls": [
+      "_invalidateDataSnapshot",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getEventDefinitions",
+    "source": "src/server/events/definitions.js",
+    "legacyLine": 29394,
+    "lines": 18,
+    "calls": [
+      "_authorizeEventWriter",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveEventDefinition",
+    "source": "src/server/events/definitions.js",
+    "legacyLine": 29412,
+    "lines": 151,
+    "calls": [
+      "_authorizeEventWriter",
+      "_validateEventDefinition",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "deleteEventDefinition",
+    "source": "src/server/events/definitions.js",
+    "legacyLine": 29563,
+    "lines": 71,
+    "calls": [
+      "_authorizeEventWriter",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getTodayEvents",
+    "source": "src/server/events/attendance.js",
+    "legacyLine": 29634,
+    "lines": 59,
+    "calls": [
+      "_examIsConfirmedPanitia_",
+      "_hasTimeInToday",
+      "_isPicketOfficer",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getEventAttendance",
+    "source": "src/server/events/attendance.js",
+    "legacyLine": 29693,
+    "lines": 67,
+    "calls": [
+      "_examIsConfirmedPanitia_",
+      "_hasTimeInToday",
+      "_isPicketOfficer",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "_upsertAttendanceRecord",
+    "source": "src/server/events/attendance.js",
+    "legacyLine": 29760,
+    "lines": 25,
+    "calls": []
+  },
+  {
+    "name": "saveEventAttendance",
+    "source": "src/server/events/attendance.js",
+    "legacyLine": 29785,
+    "lines": 258,
+    "calls": [
+      "_authorizeAttendanceWriter",
+      "_escHtml_",
+      "_examIsConfirmedPanitia_",
+      "_hasTimeInToday",
+      "_isPicketOfficer",
+      "_notifGetEmail_",
+      "_upsertAttendanceRecord",
+      "findData",
+      "generateId",
+      "getData",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getMyPendingJournals",
+    "source": "src/server/events/journals.js",
+    "legacyLine": 30043,
+    "lines": 63,
+    "calls": [
+      "_getConfigMap",
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "saveEventJournal",
+    "source": "src/server/events/journals.js",
+    "legacyLine": 30106,
+    "lines": 132,
+    "calls": [
+      "_getConfigMap",
+      "_invalidateDataSnapshot",
+      "findData",
+      "generateId",
+      "getSheet",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getEventAttendanceHistory",
+    "source": "src/server/events/journals.js",
+    "legacyLine": 30238,
+    "lines": 56,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  },
+  {
+    "name": "getEventJournalHistory",
+    "source": "src/server/events/journals.js",
+    "legacyLine": 30294,
+    "lines": 70,
+    "calls": [
+      "getData",
+      "verifySession"
+    ]
+  }
+]

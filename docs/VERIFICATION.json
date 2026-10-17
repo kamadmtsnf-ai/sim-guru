@@ -1,0 +1,39 @@
+{
+  "baseline_commit": "d6a04ffab16e4be26feb2e5fc9f78a89df93335b",
+  "validated_at": "2026-10-17T05:59:20.291Z",
+  "runtime": "v24.19.0",
+  "checks": {
+    "clean_dependency_install": "passed (npm ci --offline --ignore-scripts)",
+    "source_and_rpc_checks": "passed",
+    "regression_tests": {
+      "passed": 51,
+      "failed": 0
+    },
+    "build": "passed",
+    "analysis": "passed"
+  },
+  "scope": {
+    "backend_modules": 69,
+    "frontend_modules": 69,
+    "pages": 34,
+    "registered_sources": 175
+  },
+  "artifacts": [
+    {
+      "file": "dist/Code.gs",
+      "sha256": "d69eb5cb8a7b995c30294730b5cdb932e989049b010bacb1c6f4754c5d5cf91c"
+    },
+    {
+      "file": "dist/Index.html",
+      "sha256": "a8bc1dc43759d5b92bcaff945d7db95889d07ef4bb9d3b4b2c903eab115dbb40"
+    }
+  ],
+  "not_executed": [
+    "Google Apps Script runtime integration",
+    "Live spreadsheet data tests",
+    "Email/Drive/trigger integration",
+    "Browser visual and mobile tests",
+    "GitHub Actions workflow execution"
+  ],
+  "remote_mutations": []
+}
